@@ -1,3 +1,4 @@
+#leetcode #242
 def getFreq(freq: {}, s: str) -> None: 
     for i in s: 
         freq[i] = 1 + freq.get(i, 0)
