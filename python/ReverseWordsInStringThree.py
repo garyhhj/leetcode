@@ -1,5 +1,6 @@
 #leetcode #557
 
+'''
 class Solution:
     def reverseWords(self, s: str) -> str:
         res = ""
@@ -12,3 +13,10 @@ class Solution:
                 continue
             curr +=  s[i]
         return res + curr[::-1]
+'''
+
+class Solution:
+def reverseWords(self, s: str) -> str:
+    reverse = lambda word : word[::-1]
+    return " ".join(map(reverse, s.split()))
+    
