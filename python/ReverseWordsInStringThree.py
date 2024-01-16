@@ -16,7 +16,7 @@ class Solution:
 '''
 
 class Solution:
-def reverseWords(self, s: str) -> str:
-    reverse = lambda word : word[::-1]
-    return " ".join(map(reverse, s.split()))
-    
+    def reverseWords(self, s: str) -> str:
+        reverse = lambda word : word[::-1]
+        return " ".join(map(reverse, s.split()))
+        
